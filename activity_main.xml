@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C1A4D">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/quiz_logo" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/golden_button"
+        android:text="ИГРАТЬ"
+        android:textColor="#2C1A4D"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/recordsButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/playButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/golden_button"
+        android:text="РЕКОРДЫ"
+        android:textColor="#2C1A4D"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
