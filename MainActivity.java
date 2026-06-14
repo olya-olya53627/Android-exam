@@ -18,10 +18,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Исправлено: передаем this (Context)
+        //  передаем this (Context)
         audioManager = new AudioManager(this);
 
-        // Исправлено: передаем this и ресурс
+        // передаем this и ресурс
         audioManager.startBackgroundMusic(this, R.raw.background_music);
 
         logo = findViewById(R.id.logo);
@@ -39,14 +39,14 @@ public class MainActivity extends AppCompatActivity {
                 })
                 .start();
 
-        // Исправлено: используем MainActivity.this вместо this
+        //  используем MainActivity.this вместо this
         playButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, GameActivity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         });
 
-        // Исправлено: используем MainActivity.this вместо this
+        //  используем MainActivity.this вместо this
         recordsButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, RecordsActivity.class);
             startActivity(intent);
